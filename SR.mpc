@@ -1,0 +1,8 @@
+project (StrippedReceiver) {
+  exename = StrippedReceiver
+  Source_Files {
+    StrippedReceiver.cpp
+  }
+
+  postbuild = strip StrippedReceiver
+}
