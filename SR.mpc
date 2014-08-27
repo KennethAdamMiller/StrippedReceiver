@@ -4,5 +4,8 @@ project (StrippedReceiver) {
     StrippedReceiver.cpp
   }
 
+  specific {
+    compile_flags += -m32
+  }
   postbuild = strip StrippedReceiver
 }
